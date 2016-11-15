@@ -21,10 +21,6 @@ h1, h2, h3 {
   color: #444;
 }
 
-p {
-	color: black;
-}
-
 nav {
 	background: salmon;
 	padding: 1em;
@@ -66,7 +62,6 @@ footer {
 
 section {
 	background: rgba(255,255,240,0.8);
-	color: white;
 	padding: 2em;
 	margin: 1em 0em 0em 1em;
 }
@@ -80,7 +75,6 @@ section {
   }
   section {
   	background: rgba(255,255,240,0.8);
-  	color: white;
   	padding: 1em;
   	margin: 1em -1em -1em -1em;
   }
