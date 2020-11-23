@@ -1,59 +1,79 @@
 * {
-	margin: 0em;
-	padding: 0em;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  transition: all 1s ease;
+	box-sizing: border-box;
+	font-size: 100%;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  font-family: sans-serif;
+	font-family: sans-serif;
 }
 
-h1 { font-size: 240%; }
-h2 { font-size: 150%; }
-h3 { font-size: 125%; }
+h1 {font-size: 240%; }
+h2 {font-size: 150%; }
+h3 {font-size: 125%; }
 
 h1, h2, h3 {
-  color: #444;
+	color: #FF5511;
+	padding: 0.5rem 1rem;
+	margin: 0.5rem -1rem -0.5rem -1rem;
 }
 
-nav {
+p {
+	margin-top: 0.5rem;
+}
+
+header, main, footer {
+	max-width: 30em;
+	margin: 1em auto;
 	padding: 1em;
-	margin: 0em auto;
+}
+
+li {
+	margin: 0 0 0 2em;
+}
+
+nav ul {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 nav li {
-	margin: 0.5em;
-	padding: 0.5em;
-	color: black;
-	display: inline-block;
 	list-style-type: none;
-  border: solid #ccc thin;
+	margin: 0;
 }
 
-header, article, footer {
-	padding: 1em;
-	max-width: 30em;
-	margin: 0em auto;
+nav li>a {
+	padding: 0.5rem;
+	background: #BB0000;
+	color: white;
+	border-radius: 0.25rem;
+	text-decoration: none;
+	display: block;
 }
 
-section {
-	padding: 2em;
-	margin: 1em 0em 0em 1em;
+
+nav li>a:hover {
+	background: green;
+	color: #000;
 }
 
-@media (max-width: 30em) {
-  nav li {
-    margin: 0.25em;
-  	padding: 0.25em;
-  	color: black;
-  	display: block;
-  }
-  section {
-  	padding: 1em;
-  	margin: 1em -1em -1em -1em;
-  }
+:target {
+	background: #BB0000;
+	color: white;
+}
+
+@media (max-width: 700px) {
+
+	h1 {font-size: 140%; }
+	h2 {font-size: 120%; }
+	h3 {font-size: 105%; }
+
+	nav ul {
+		flex-direction: column;
+	}
+
 }

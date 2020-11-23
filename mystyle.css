@@ -37,6 +37,15 @@ nav li {
   border: solid black thin;
 }
 
+p {
+	margin-top: 1em;
+}
+
+li {
+	margin-top: 0.5em;
+	margin-left: 2em;
+}
+
 header, article, footer {
 	padding: 1em;
 	max-width: 30em;
@@ -44,20 +53,20 @@ header, article, footer {
 }
 
 header {
-	background: green;
+	background: hotpink;
 }
 
 main {
-	background: grey;
+	background: mistyrose;
 }
 
 
 article {
-	background: yellow;
+	background: #FFFF77;
 }
 
 footer {
-	background: blue;
+	background: forestgreen;
 }
 
 section {
